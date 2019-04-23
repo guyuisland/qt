@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1218</width>
+    <height>812</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QCheckBox" name="City5">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>130</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>西安</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City0">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>长沙</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Start">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>始发地：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>190</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>——</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TravelerNumber_Output">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>250</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>000001</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="End_Select">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>70</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>长沙</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>沈阳</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>北京</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>石家庄</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>济南</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>西安</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>杭州</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>南昌</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>武汉</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>重庆</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>广州</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>南宁</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="CurrentTime_Output">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>610</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2018/4/2/09:00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ThroughCity">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>72</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>途经城市：</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>100</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>石家庄</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="yuan">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>290</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>元</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TravelTime_Budget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>旅行时间预算（仅模式3可填):</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="State_Output">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>650</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>火车</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City7">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>南昌</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TravelerName">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>30</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>请输入旅客名称：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Strat_Time_Range">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>出发时间范围：</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City9">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>160</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重庆</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TotalFare_Output">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>290</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TravelerLocation">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>630</y>
+      <width>72</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>所处地点：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Hour">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>220</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>小时</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Destination">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>70</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>目的地：</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="TravelPath_Output">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>311</y>
+      <width>561</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City11">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>160</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>南宁</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TotalTime_Output">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>290</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>128</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TotalFare">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>290</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>预计费用：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CurrentState">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>650</y>
+      <width>72</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前状态：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TravelerNumber_Input">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>570</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startQuery_Click">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>570</y>
+      <width>93</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始查询</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City1">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>100</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>沈阳</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TravelerState_Search">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>550</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>旅客状态查询</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="AmPm1">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>190</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>am</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pm</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QCheckBox" name="City6">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>130</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>杭州</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TravelPath">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>旅行路线输出：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="TimeRange_End">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>190</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>11：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12：00</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="TotalTime">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>290</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>预计耗时：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="AmPm2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>190</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>am</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pm</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QCheckBox" name="City2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>100</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>北京</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TravelMode">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>70</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>旅行模式：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Hour_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>290</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>小时</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Location_Output">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>630</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>沈阳-&gt;北京</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CurrentTime">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>610</y>
+      <width>72</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前时间：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TravelerNumber_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>570</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>请输入旅客编号：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TimeBudget_Input">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>220</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetTravelerInfo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>250</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重置旅客信息</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City8">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>160</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>武汉</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="RouteGraph_Output" native="true">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>40</y>
+      <width>751</width>
+      <height>641</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CitySelect">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>城市选择</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Start_Select">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>长沙</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>沈阳</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>北京</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>石家庄</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>济南</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>西安</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>杭州</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>南昌</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>武汉</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>重庆</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>广州</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>南宁</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="addTraveler_Click">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>添加旅客</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TravelerName_Input">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City4">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>130</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>济南</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Mode_Select">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>70</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>最少费用</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>最少时间</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>限时最少费用</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="creatTravelPath_Click">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>生成旅行路线</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="TimeRange_Start">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>190</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>11：00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12：00</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="TravelerNumber">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>250</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>您的旅客编号为：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RouteGraph">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>72</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>路线标示</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="City10">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>160</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>广州</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>30</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1218</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
