@@ -69,8 +69,6 @@ private:
     void getThroughCity();//得到途经城市
     int getTimeRange_Start();//获取出发时间范围_开始
     int getTimeRange_End();//获取出发时间范围_结束
-    int getAmPm_1();//获取早上/下午
-    int getAmPm_2();//获取早上/下午
 
     void printout(std::vector<imfo> path);
     void enTimeBudget_Input();//根据旅行模式修改时间预算是否可填

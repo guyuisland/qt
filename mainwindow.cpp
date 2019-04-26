@@ -111,11 +111,6 @@ int MainWindow::getStrategy()
 }
 
 //获取用户所选途经城市
-/*void MainWindow::getThroughCity()
-{
-
-}*/
-
 //获取出发时间范围_开始
 int MainWindow::getTimeRange_Start()
 {
@@ -132,17 +127,6 @@ int MainWindow::getTimeRange_End()
     return ui->TimeRange_End->currentIndex();
 }
 
-//获取早上/下午
-int MainWindow::getAmPm_1()
-{
-    qDebug() << "Get AMPM_1";
-    return ui->AmPm1->currentIndex();
-}
-int MainWindow::getAmPm_2()
-{
-    qDebug() << "Get AMPM_2";
-    return ui->AmPm2->currentIndex();
-}
 
 //根据策略决定是否启用时间预算框
 void MainWindow::enTimeBudget_Input()
@@ -201,8 +185,6 @@ void MainWindow::on_resetTravelerInfo_clicked()
     ui->City11->setChecked(false);
     ui->TimeRange_Start->setCurrentIndex(0);
     ui->TimeRange_End->setCurrentIndex(0);
-    ui->AmPm1->setCurrentIndex(0);
-    ui->AmPm2->setCurrentText(0);
     ui->TimeBudget_Input->setText("");
     ui->TravelerNumber_Output->setText("000000");
     ui->TotalTime_Output->setText("0");
@@ -222,7 +204,7 @@ void MainWindow::on_creatTravelPath_Click_clicked()
     client.set_arrival(ui->End_Select->currentIndex());
     client.set_strategy(ui->Mode_Select->currentIndex());
     client.set_start_time(ui->TimeRange_Start->currentIndex());
-    client.set_way_city(throughcity);
+    //client.set_way_city(throughcity);
     client.set_start_time(ui->TimeRange_Start->currentIndex());
     client.set_end_time(ui->TimeRange_End->currentIndex());
     path = client.least_money();
